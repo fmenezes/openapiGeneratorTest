@@ -1,1 +1,7 @@
 generatorName: go
+gitUserId: fmenezes
+gitRepoId: openapiGeneratorTest
+gitHost: github.com
+templateDir: config/go-templates
+outputDir: dist
+inputSpec: https://raw.githubusercontent.com/mongodb/go-client-mongodb-atlas/sdkv2/openapi/atlas-api-transformed.yaml

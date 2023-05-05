@@ -2,8 +2,8 @@
   "name": "openapigeneratortest",
   "version": "1.0.0",
   "scripts": {
-    "fetch": "./scripts/fetch.sh",
-    "generate": "./scripts/generate.sh",
+    "clear": "rm -rf dist",
+    "generate": "openapi-generator-cli generate -c './config/config.yaml'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

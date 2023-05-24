@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "clear": "rm -rf dist",
-    "generate": "openapi-generator-cli generate -c './config/config.yaml'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "init": "mkdir -p ./dist && cp ./config/.openapi-generator-ignore dist/.openapi-generator-ignore",
+    "generate": "npm run init && openapi-generator-cli generate -c './config/config.yaml'"
   },
   "dependencies": {
     "@openapitools/openapi-generator-cli": "^2.6.0"
